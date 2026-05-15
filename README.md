@@ -1,31 +1,31 @@
-# Simple Interest Calculator
+# Emotion Detector
 
-This is a basic student-style simple interest calculator made using HTML, CSS, and JavaScript.
+This repository contains the final project for an AI-based web application
+named Emotion Detector. The application uses the Watson NLP emotion prediction
+service to analyze text and identify the dominant emotion in the given
+statement.
 
-## Features
+## Project Features
 
-- Enter principal amount
-- Enter rate of interest
-- Enter time in years
-- Calculate simple interest
-- Show total amount
+- Detects `anger`, `disgust`, `fear`, `joy`, and `sadness`
+- Returns the dominant emotion from the analyzed text
+- Exposes the functionality through a Flask web interface
+- Includes unit tests for the emotion detection logic
+- Includes error handling for invalid or blank input
+- Supports static code analysis with `pylint`
 
-## Formula Used
+## Project Structure
 
-Simple Interest = (Principal x Rate x Time) / 100
+- `EmotionDetection/` contains the emotion detection package
+- `server.py` runs the Flask web application
+- `test_emotion_detection.py` contains the unit tests
+- `templates/` contains the HTML page for the web app
+- `static/` contains the JavaScript used by the interface
 
-## Files
+## Run the Application
 
-- `index.html` for the structure
-- `styles.css` for styling
-- `script.js` for calculation logic
+```bash
+python server.py
+```
 
-## How to Run
-
-1. Open `index.html` in your browser.
-2. Enter the values.
-3. Click the calculate button.
-
-## Author
-
-Made as a simple student project.
+Then open `http://127.0.0.1:5000/` in a browser.
